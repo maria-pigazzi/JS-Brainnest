@@ -1,18 +1,16 @@
-const symbols = ["rock", "paper", "scissors"];
-
 function computerPlay() {
+  const symbols = ["rock", "paper", "scissors"];
   let randomNumber = (Math.floor(Math.random() * symbols.length))
-  if (randomNumber == 0) {
+ /* if (randomNumber == 0) {
     return "rock"
   } else if (randomNumber == 1) {
     return "paper"
   } else if (randomNumber == 2) {
     return "scissors"
-  }
+  } */
 };
 
-console.log(computerPlay());
-
+// console.log(computerPlay());
 
 let playerSelection = prompt("Rock, paper or scissors?").toLowerCase();
 console.log(playerSelection);
@@ -28,10 +26,6 @@ function playRound(playerSelection, computerSelection) {
     return "Looks like a draw!";
   }
 };
-
-
-
-let i = 0;
 
 function game() {
   for (let i = 0; i < 5; i++) {
